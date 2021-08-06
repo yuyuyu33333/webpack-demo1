@@ -1,5 +1,5 @@
-import css from './x.css'
-console.log (css.toString())
+import  './x.css'
+import  './y.css'
 
 
 export default 'xxx'
