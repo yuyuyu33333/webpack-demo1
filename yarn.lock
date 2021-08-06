@@ -740,11 +740,6 @@ clone-deep@^4.0.1:
     kind-of "^6.0.2"
     shallow-clone "^3.0.0"
 
-clone@^2.1.1:
-  version "2.1.2"
-  resolved "https://registry.nlark.com/clone/download/clone-2.1.2.tgz#1b7f4b9f591f1e8f83670401600345a02887435f"
-  integrity sha1-G39Ln1kfHo+DZwQBYANFoCiHQ18=
-
 collection-visit@^1.0.0:
   version "1.0.0"
   resolved "https://registry.nlark.com/collection-visit/download/collection-visit-1.0.0.tgz#4bc0373c164bc3291b4d368c829cf1a80a59dca0"
@@ -1014,7 +1009,7 @@ cyclist@^1.0.1:
   resolved "https://registry.nlark.com/cyclist/download/cyclist-1.0.1.tgz#596e9698fd0c80e12038c2b82d6eb1b35b6224d9"
   integrity sha1-WW6WmP0MgOEgOMK4LW6xs1tiJNk=
 
-dart-sass@^1.23.7:
+dart-sass@1:
   version "1.25.0"
   resolved "https://registry.npm.taobao.org/dart-sass/download/dart-sass-1.25.0.tgz#e00c0348118916e9d81cb485297184c131af1dad"
   integrity sha1-4AwDSBGJFunYHLSFKXGEwTGvHa0=
@@ -1976,7 +1971,7 @@ https-browserify@^1.0.0:
   resolved "https://registry.nlark.com/https-browserify/download/https-browserify-1.0.0.tgz#ec06c10e0a34c0f2faf199f7fd7fc78fffd03c73"
   integrity sha1-7AbBDgo0wPL68Zn3/X/Hj//QPHM=
 
-iconv-lite@0.4.24:
+iconv-lite@0.4.24, iconv-lite@^0.4.4:
   version "0.4.24"
   resolved "https://registry.nlark.com/iconv-lite/download/iconv-lite-0.4.24.tgz#2022b4b25fbddc21d2f524974a474aafe733908b"
   integrity sha1-ICK0sl+93CHS9SSXSkdKr+czkIs=
@@ -2399,21 +2394,27 @@ kind-of@^6.0.0, kind-of@^6.0.2:
   resolved "https://registry.nlark.com/kind-of/download/kind-of-6.0.3.tgz#07c05034a6c349fa06e24fa35aa76db4580ce4dd"
   integrity sha1-B8BQNKbDSfoG4k+jWqdttFgM5N0=
 
-less-loader@^5.0.0:
-  version "5.0.0"
-  resolved "https://registry.nlark.com/less-loader/download/less-loader-5.0.0.tgz?cache=0&sync_timestamp=1625230463215&other_urls=https%3A%2F%2Fregistry.nlark.com%2Fless-loader%2Fdownload%2Fless-loader-5.0.0.tgz#498dde3a6c6c4f887458ee9ed3f086a12ad1b466"
-  integrity sha1-SY3eOmxsT4h0WO6e0/CGoSrRtGY=
-  dependencies:
-    clone "^2.1.1"
-    loader-utils "^1.1.0"
-    pify "^4.0.1"
+klona@^2.0.4:
+  version "2.0.4"
+  resolved "https://registry.npm.taobao.org/klona/download/klona-2.0.4.tgz#7bb1e3affb0cb8624547ef7e8f6708ea2e39dfc0"
+  integrity sha1-e7Hjr/sMuGJFR+9+j2cI6i4538A=
 
-less@^3.10.3:
-  version "3.13.1"
-  resolved "https://registry.npm.taobao.org/less/download/less-3.13.1.tgz#0ebc91d2a0e9c0c6735b83d496b0ab0583077909"
-  integrity sha1-DryR0qDpwMZzW4PUlrCrBYMHeQk=
+less-loader@7:
+  version "7.3.0"
+  resolved "https://registry.nlark.com/less-loader/download/less-loader-7.3.0.tgz?cache=0&sync_timestamp=1625230463215&other_urls=https%3A%2F%2Fregistry.nlark.com%2Fless-loader%2Fdownload%2Fless-loader-7.3.0.tgz#f9d6d36d18739d642067a05fb5bd70c8c61317e5"
+  integrity sha1-+dbTbRhznWQgZ6Bftb1wyMYTF+U=
+  dependencies:
+    klona "^2.0.4"
+    loader-utils "^2.0.0"
+    schema-utils "^3.0.0"
+
+less@^4.1.1:
+  version "4.1.1"
+  resolved "https://registry.npm.taobao.org/less/download/less-4.1.1.tgz#15bf253a9939791dc690888c3ff424f3e6c7edba"
+  integrity sha1-Fb8lOpk5eR3GkIiMP/Qk8+bH7bo=
   dependencies:
     copy-anything "^2.0.1"
+    parse-node-version "^1.0.1"
     tslib "^1.10.0"
   optionalDependencies:
     errno "^0.1.1"
@@ -2421,7 +2422,7 @@ less@^3.10.3:
     image-size "~0.5.0"
     make-dir "^2.1.0"
     mime "^1.4.1"
-    native-request "^1.0.5"
+    needle "^2.5.2"
     source-map "~0.6.0"
 
 loader-runner@^2.4.0:
@@ -2748,10 +2749,14 @@ nanomatch@^1.2.9:
     snapdragon "^0.8.1"
     to-regex "^3.0.1"
 
-native-request@^1.0.5:
-  version "1.0.8"
-  resolved "https://registry.nlark.com/native-request/download/native-request-1.0.8.tgz#8f66bf606e0f7ea27c0e5995eb2f5d03e33ae6fb"
-  integrity sha1-j2a/YG4PfqJ8DlmV6y9dA+M65vs=
+needle@^2.5.2:
+  version "2.8.0"
+  resolved "https://registry.nlark.com/needle/download/needle-2.8.0.tgz?cache=0&sync_timestamp=1625636253830&other_urls=https%3A%2F%2Fregistry.nlark.com%2Fneedle%2Fdownload%2Fneedle-2.8.0.tgz#1c8ef9c1a2c29dcc1e83d73809d7bc681c80a048"
+  integrity sha1-HI75waLCncweg9c4Cde8aByAoEg=
+  dependencies:
+    debug "^3.2.6"
+    iconv-lite "^0.4.4"
+    sax "^1.2.4"
 
 negotiator@0.6.2:
   version "0.6.2"
@@ -3020,6 +3025,11 @@ parse-asn1@^5.0.0, parse-asn1@^5.1.5:
     evp_bytestokey "^1.0.0"
     pbkdf2 "^3.0.3"
     safe-buffer "^5.1.1"
+
+parse-node-version@^1.0.1:
+  version "1.0.1"
+  resolved "https://registry.npm.taobao.org/parse-node-version/download/parse-node-version-1.0.1.tgz#e2b5dbede00e7fa9bc363607f53327e8b073189b"
+  integrity sha1-4rXb7eAOf6m8NjYH9TMn6LBzGJs=
 
 parse-passwd@^1.0.0:
   version "1.0.0"
@@ -3510,7 +3520,7 @@ safe-regex@^1.1.0:
   resolved "https://registry.nlark.com/safer-buffer/download/safer-buffer-2.1.2.tgz#44fa161b0187b9549dd84bb91802f9bd8385cd6a"
   integrity sha1-RPoWGwGHuVSd2Eu5GAL5vYOFzWo=
 
-sass-loader@^8.0.0:
+sass-loader@8:
   version "8.0.2"
   resolved "https://registry.nlark.com/sass-loader/download/sass-loader-8.0.2.tgz#debecd8c3ce243c76454f2e8290482150380090d"
   integrity sha1-3r7NjDziQ8dkVPLoKQSCFQOACQ0=
@@ -3521,7 +3531,7 @@ sass-loader@^8.0.0:
     schema-utils "^2.6.1"
     semver "^6.3.0"
 
-sax@~1.2.4:
+sax@^1.2.4, sax@~1.2.4:
   version "1.2.4"
   resolved "https://registry.npm.taobao.org/sax/download/sax-1.2.4.tgz#2816234e2378bddc4e5354fab5caa895df7100d9"
   integrity sha1-KBYjTiN4vdxOU1T6tcqold9xANk=
@@ -3962,7 +3972,7 @@ style-loader@2:
     loader-utils "^2.0.0"
     schema-utils "^3.0.0"
 
-stylus-loader@^3.0.2:
+stylus-loader@3:
   version "3.0.2"
   resolved "https://registry.nlark.com/stylus-loader/download/stylus-loader-3.0.2.tgz#27a706420b05a38e038e7cacb153578d450513c6"
   integrity sha1-J6cGQgsFo44DjnyssVNXjUUFE8Y=
@@ -3971,7 +3981,7 @@ stylus-loader@^3.0.2:
     lodash.clonedeep "^4.5.0"
     when "~3.6.x"
 
-stylus@^0.54.7:
+stylus@^0.54.8:
   version "0.54.8"
   resolved "https://registry.nlark.com/stylus/download/stylus-0.54.8.tgz#3da3e65966bc567a7b044bfe0eece653e099d147"
   integrity sha1-PaPmWWa8Vnp7BEv+DuzmU+CZ0Uc=
